@@ -3,8 +3,8 @@ function drawDisplay()
     term.redirect(display)
     display.setBackgroundColor(colors.black)
     term.clear(display)
-    dispSizeX = term.getSize(display)
-    dispSizeY = tonumber(string.reverse(term.getSize(display)))
+    dispSizeX = monitor.getSize(display)
+    dispSizeY = tonumber(string.reverse(monitor.getSize(display)))
     barAreaStartX = dispSizeX * .05
     barAreaStartY = dispSizeY * .2
     barAreaEndX = dispSizeX * .97
